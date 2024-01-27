@@ -10,15 +10,15 @@ const fr = {
     },
     codex: {
       name: 'codex',
-      description: 'trouver une entrée de codex par son nom',
+      description: 'trouver un aspect du codex avec son nom',
       options: {
         codexEntryNameOption: {
           name: 'nom',
-          description: `nom de l'entrée de codex`,
+          description: `nom de l'aspect du codex`,
         }
       },
       errors: {
-        notFound: 'entrée de codex non trouvée',
+        notFound: 'aspect non trouvé',
       }
     },
     config: {
@@ -27,13 +27,13 @@ const fr = {
       options: {
         locale: {
           name: 'locale',
-          description: 'définit la locale pour le bot sur ce serveur'
+          description: 'définit la langue locale du bot sur ce serveur'
         }
       },
     },
     events: {
       name: 'événements',
-      description: `recevoir des mises à jour sur les marées d'enfer et les boss du monde`,
+      description: `recevoir des mises à jour sur les marées infernales et les bosses de monde`,
       options: {
         helltide: {
           name: 'vague-infernale',
@@ -41,7 +41,7 @@ const fr = {
         },
         worldBoss: {
           name: 'world-boss',
-          description: `recevoir des alertes sur les prochains world boss  (valeur par défaut est 'vrai')`,
+          description: `recevoir des alertes sur les prochains bosses de monde (valeur par défaut est 'vrai')`,
         },
         zoneEvent: {
           name: 'événement-de-zone',
@@ -49,39 +49,39 @@ const fr = {
         },
         helltideRole: {
           name: 'rôle-de-vague-infernale',
-          description: 'définit utilasateur ou rôle pour être alerté sur les prochaines vagues infernales',
+          description: 'défini un utilisateur ou rôle pour être alerté sur les prochaines vagues infernales',
         },
         worldBossRole: {
           name: 'rôle-de-world-boss',
-          description: 'définit utilasateur ou rôle pour être alerté sur les prochains boss mondial ',
+          description: 'défini un utilisateur ou rôle pour être alerté sur les prochains boss mondiaux',
         },
         zoneEventRole: {
           name: 'rôle-de-événement-zone',
-          description: 'définit utilasateur ou rôle pour être alerté sur les prochains événements de zone',
+          description: 'défini un utilisateur ou rôle pour être alerté sur les prochains événements de zone',
         },
         allEventRole: {
           name: 'rôle-de-tous-les-événements',
-          description: 'définit utilasateur ou rôle pour être alerté sur tous les événements',
+          description: 'défini un utilisateur ou rôle pour être alerté sur tous les événements',
         },
         images: {
           name: 'images',
           description: 'montrer des images dans les alertes',
         },
         deleteMessages: {
-          name: 'efacer-événements-expirés',
-          description: 'efacer notifications de événements de le canal depuis de que le événement est terminé',
+          name: 'effacer-événements-expirés',
+          description: `effacer les notifications d'événements de le canal depuis de que l'événement est terminé`,
         },
       },
       errors: {
-        permissions: `Le bot actualment n'a pas les permissions de "Envoyer Messages" et "Voir Messages" pour ce canal, donc il ne peut pas envoyer des alertes. Aprés leur autorisation, reexécuter cette commande!`,
+        permissions: `Le bot actuellement n'a pas les permissions "Envoyer Messages" et "Voir Messages" pour ce canal, donc il ne peut pas envoyer d'alertes. Aprés leur autorisation, réexécuter cette commande!`,
       },
       messages: {
-        success: 'Les événements seront publiés dans ce canal! Utiliser `/{unsub}` pour arrêter les publications de événements ici. Utiliser la commande `/{events}` de nouveau pour changer votre configuration.',
+        success: `Les événements seront publiés dans ce canal! Utiliser `/{unsub}` pour arrêter les publications d'événements ici. Utiliser la commande `/{events}` de nouveau pour changer votre configuration.`,
       }
     },
     helltide: {
       name: 'hell-tide',
-      description: 'montrer la carte et des informations sur les vagues infernales',
+      description: 'montrer la carte et les informations sur les vagues infernales',
       options: {}
     },
     help: {
@@ -91,12 +91,12 @@ const fr = {
     },
     invite: {
       name: 'inviter',
-      description: `obtenir le lien d'invitation du bot et ajoute-le a autres serveurs`,
+      description: `obtenir le lien d'invitation du bot et ajoute-le à d'autres serveurs`,
       options: {}
     },
     nightmareLevel: {
       name: 'nightmare-level',
-      description: 'calculer le niveau optimal pour les donjons du cauchemar pour votre personnage',
+      description: 'calculer le niveau optimal du donjon du cauchemar pour votre personnage',
       options: {
         level: {
           name: 'niveau',
@@ -110,30 +110,30 @@ const fr = {
     },
     nightmareTier: {
       name: 'niveaux-cauchemar',
-      description: `montrer une liste de niveaux d'efficacité de donjons du cauchemar`,
+      description: `montrer une liste des niveaux d'efficacité de donjons du cauchemar`,
       options: {}
     },
     paragon: {
       name: 'parangon',
-      description: 'trouver une entrée de parangon par son nom',
+      description: 'trouver une grille de parangon par son nom',
       options: {
         entryName: {
           name: 'nom',
-          description: `nom de l'entrée paragon`,
+          description: `nom de la grille de paragon`,
         }
       },
       errors: {
-        notFound: 'entrée de codex non trouvée!',
+        notFound: 'grille de paragon non trouvée!',
       },
     },
     panel: {
       name: 'panneau',
-      description: 'créer un panneau qui montre le programme des événements mondiaux',
+      description: 'créer un panneau qui montre le planning des événements mondiaux',
       options: {},
     },
     season: {
       name: 'saison',
-      description: 'obtenir des informations sobre la saison prochaine/actuelle',
+      description: 'obtenir des informations sur la saison prochaine/actuelle',
       options: {},
     },
     skill: {
@@ -151,7 +151,7 @@ const fr = {
     },
     unsub: {
       name: 'désabonner',
-      description: `annuler l'abonnement a les nouvelles de vagues infernales et boss mondial`,
+      description: `annuler l'abonnement sur les nouvelles vagues infernales et boss mondiaux`,
       options: {
 				channelId: {
 					name: 'canal',
@@ -161,28 +161,28 @@ const fr = {
     },
     xpCurve: {
       name: 'courbe-xp',
-      description: 'montrer des informations sur xp et la courbe de nivellement',
+      description: `montrer des informations sur la courbe d'expérience`,
       options: {}
     }
   },
   views: {
     events: {
       hellide: {
-        title: 'La Vague Infernale déferle sur {location}!',
+        title: 'La Vague Infernale sévit sur {location}!',
         updatePending: ` (l'image sera actualisée) `,
         updateDone: ' (image actualisée)',
-        noImage: ` (image non disponible - il s'agit probablement d'une panne de service et devrait bientôt être resolu)`,
+        noImage: ` (image non disponible - il s'agit probablement d'une panne de service qui devrait bientôt être résolue)`,
         chestsRespawnLabel: 'Les coffres réapparaissent:',
         startLabel: 'Début:',
         endLabel: 'Fin:',
-        locationUrl: 'Lieux de les coffres en {location}'
+        locationUrl: 'Lieux des coffres à {location}'
       },
       worldBoss: {
-        title: `{name} s'agit dans {location}!`,
+        title: `{name} est apparu à {location}!`,
         spawnLabel: 'Spawn:'
       },
       zoneEvent: {
-        title: 'La mobilisation des légions démarre en {location}!',
+        title: 'Début de la mobilisation des légions à {location}!',
         startLabel: 'Début:'
       },
       utility: {
